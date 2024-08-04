@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise for Shivam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+        const password = prompt("Enter the password:");
+        if (password !== "shivam2024") {
+            document.body.innerHTML = "Sorry, you are not authorized to view this page.";
+        }
+        </script>
+    <div id="door" class="door">
+        <h1>Enter the Door to My Heart</h1>
+        <button id="enterButton">Enter</button>
+    </div>
+
+    <div id="question1" class="container hidden">
+        <h1>I love you so much, Shivam!</h1>
+        <p>Thank you for loving me and giving me the best part of my life. Thank you for showing me Canada, telling me how to deal with the world, for growing, and for standing with me.</p>
+        <div class="question">
+            <p>Do you love me? ❤️</p>
+            <button onclick="handleLoveResponse('yes')">Yes</button>
+            <button onclick="handleLoveResponse('no')">No</button>
+        </div>
+    </div>
+
+    <div id="question2" class="container hidden">
+        <h1>Will you marry me?</h1>
+        <div class="question">
+            <p>Will you marry me? 💍</p>
+            <button onclick="handleMarriageResponse('yes')">Of course I will</button>
+            <button onclick="handleMarriageResponse('no')">No</button>
+        </div>
+    </div>
+
+    <div id="question3" class="container hidden">
+        <h1>Say sorry for your mistakes</h1>
+        <div class="question">
+            <p>Say sorry for your mistakes</p>
+            <button onclick="handleSorryResponse('yes')">Yes, sorry</button>
+            <button id="noButton" onclick="dragNo()">No, I'm not</button>
+        </div>
+    </div>
+
+    <div id="error" class="container hidden">
+        <p>Sorry, you can't choose this option!</p>
+    </div>
+
+    <div id="finalContent" class="container hidden">
+        <h1>Thank you for being the best part of my life. I love you more than words can express. ❤️</h1>
+        <div class="gallery">
+            <img src="images/image1.jpg" alt="Moment 1">
+            <img src="images/image2.jpg" alt="Moment 2">
+            <img src="images/image3.jpg" alt="Moment 3">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
